@@ -4,15 +4,14 @@ WebEx dashboard built for updating meet settings quickly.
 
 Website features pin, auto lock, alternate host, call me number, and video address settings on an easy-to-use dashboard.
 
-# Purpose
+## Purpose
 
 Dashboard will give users one place to update common WebEx settings vs navigating through several prompts via the web portal.
 
 ## Getting Started
 
 1) Obtain your own Cisco WebEx API credentials.
-* 
-* https://developer.cisco.com/site/webex-developer/develop-test/try-webex-apis/ 
+* Visit https://developer.cisco.com/site/webex-developer/develop-test/try-webex-apis/ 
 * Test your credentials by logging into the WebEx API demo site: https://apidemoeu.webex.com
 
 2) Setup a test environment for the WebEx Dashboard.
@@ -31,12 +30,12 @@ Dashboard will give users one place to update common WebEx settings vs navigatin
 * The Video System Address setting cannot be tested via the apidemoeu site.
 
 ## Additional Readings & Resources
-* Cisco WebEx Meetings XML API intro lab: https://learninglabs.cisco.com/lab/collab-webex/step/1
-* Cisco WebEx API landing page: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/overview/
-* XML API reference guide: https://developer.cisco.com/docs/webex-xml-api-reference-guide/
-* XML API release notes: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/reference/
-* Visit https://developer.cisco.com/docs/webex-xml-api-reference-guide/#!authenticateuser/authenticateuser for implementing SSO authentication in your organization.
-* WebEx XML best practices: https://d1nmyq4gcgsfi5.cloudfront.net/fileMedia/4d40b3d5-1405-4e92-93ce-7af317c677f4/API%20Best%20Practices_v2.pdf
+* XML API intro lab: https://learninglabs.cisco.com/lab/collab-webex/step/1
+* XML API landing page: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/overview/
+* Reference guide: https://developer.cisco.com/docs/webex-xml-api-reference-guide/
+* Release notes: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/reference/
+* Authentication (SSO): https://developer.cisco.com/docs/webex-xml-api-reference-guide/#!authenticateuser/authenticateuser
+* Best practices: https://d1nmyq4gcgsfi5.cloudfront.net/fileMedia/4d40b3d5-1405-4e92-93ce-7af317c677f4/API%20Best%20Practices_v2.pdf
 * Sample Code: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/sample-code/
 
 ## Built With
