@@ -43,6 +43,7 @@ Dashboard will give users one place to update common WebEx settings vs navigatin
 * Bootstrap4
 * PHP5
 * jQuery / JavaScript
+* AJAX
 * WebEx XML API
 
 ## Contributing
@@ -63,5 +64,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Cisco php example code was used in the creation of this project: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/sample-code/
+* Cisco php example code was used in the creation of this project: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/sample-code/
+* AJAX code used to prevent form submission page reload and inject the results in bootstrap: https://learn.getgrav.org/forms/forms/how-to-ajax-submission
 
