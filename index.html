@@ -10,168 +10,181 @@
   <script src="assets/js/css3-mediaqueries.js"></script>
 </head>
 <body>
+
 <div class="container">
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Done!</h4>
-        </div>
-        <div class="modal-body" id="form-result">
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Done!</h4>
+			</div>
+			<div class="modal-body" id="form-result"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+		</div>
+	</div>
 
 	<div class="page-header">
 		<h1 class="text-center">My WebEx Quick Settings</h1> 
 	</div>
 
-		<h2>Personal Room Settings</h2>	
+	<h2>Personal Room Settings</h2>	
 
 	<div class="row">
-	  <div class="col-sm-4">
+	
+		<div class="col-sm-3">
 		<h3>Host Pin</h3>  
-	
-      <label>Enter pin:</label>
-	  <form id="hostPin" method="post" action="php/hostPin.php"> 
-      <input name="host" id="host" type="text" class="form-control" placeholder="9091">
-	<div class="col-xs-12" style="height:10px;"></div>
-	<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
-	</form>
-	  </div>
-	  
-	  <div class="col-sm-4">
-		<h3>Automatic Lock</h3>
-		  <div class="row">
-    <div class="col-sm-6">
-<form id="lock" method="post" action="php/lock.php"> 		
-	<button type="submit" value="Submit" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Enable (Lock)</button>  
-<div class="col-xs-12" style="height:10px;"></div>
-
-</form>
-</div>
-    <div class="col-sm-6">
-<form id="unlock" method="post" action="php/unlock.php"> 		
-	<button type="submit" value="Submit" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Disable (Unlock)</button>  
-
-
-</form>  
-</div>
-
-	  </div>
-</div>
-<div class="col-sm-4">
-		<h3>Alternate Hosts</h3>  
-  <div class="row">
-    <div class="col-sm-6">
-      	<button class="btn btn-success btn-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Enable</button>  
-<div class="col-xs-12" style="height:10px;"></div>
-    </div>
-    <div class="col-sm-6">
-      		<form id="disable" method="post" action="php/alt_disable.php"> 	
-
-	<button type="submit" value="Submit" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Disable</button> 
-<div class="col-xs-12" style="height:10px;"></div>	
-	
-</form>
-    </div>
-  </div>
-
-	<div class="collapse" id="collapseExample">
-		<div class="card card-body">
-				<form class="form-inline" id="anyone" method="post" action="php/alt_anyone.php"> 	
-				
-	<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Allow anyone to be an alternate host.</button>  
-	<div class="col-xs-12" style="height:10px;"></div>
-</form>
-<form class="form-inline" id="enable" method="post" action="php/alt_enable.php"> 
-	<button class="btn btn-success btn-lg" type="submit" value="Submit" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Choose my alternate hosts.</button>
-<div class="col-xs-12" style="height:10px;"></div>	
-	
-</form>
-	<div class="collapse" id="collapseExample2">
-		<div class="card card-body">
-	<label>Enter Email:</label>
-	  <form class="form-inline" id="choose" method="post" action="php/alt_choose.php"> 
-      <input name="alt" id="alt" type="text" class="form-control" placeholder="jon.doe@xyz.com">
-	  <div class="col-xs-12" style="height:10px;"></div>
-	<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
-
-</form>  
-</div>
-</div>
+			<label>Enter pin:</label>
+			<form id="hostPin" method="post" action="php/hostPin.php"> 
+				<input name="host" id="host" type="text" class="form-control" placeholder="9091">
+				<div class="col-xs-12" style="height:10px;"></div>
+				<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
+			</form>
 		</div>
+	  
+		<div class="col-sm-3">
+		<h3>Automatic Lock</h3>
+			<div class="row">
+			
+				<div class="col-sm-6">
+					<form id="lock" method="post" action="php/lock.php"> 		
+						<button type="submit" value="Submit" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Lock</button>  
+						<div class="col-xs-12" style="height:10px;"></div>
+					</form>
+				</div>
+				
+				<div class="col-sm-6">
+					<form id="unlock" class="pass" method="post" action="php/unlock.php"> 		
+						<button type="submit" value="Submit" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Unlock</button>  
+					</form>  
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+		<h3>Instant Meetings</h3>
+			<div class="row">
+			
+				<div class="col-sm-6">
+					<form id="instEnable" method="post" action="php/inst_enable.php"> 		
+						<button type="submit" value="Submit" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Enable</button>  
+						<div class="col-xs-12" style="height:10px;"></div>
+					</form>
+				</div>
+				
+				<div class="col-sm-6">
+					<form id="instDisable" class="pass" method="post" action="php/inst_disable.php"> 		
+						<button type="submit" value="Submit" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Disable</button>  
+					</form>  
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+		<h3>Alternate Hosts</h3>  
+			<div class="row">
+			
+				<div class="col-sm-6">
+					<button class="btn btn-success btn-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Enable</button>  
+					<div class="col-xs-12" style="height:10px;"></div>
+				</div>
+				
+				<div class="col-sm-6">
+					<form id="disable" method="post" action="php/alt_disable.php"> 	
+						<button type="submit" value="Submit" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Disable</button> 
+						<div class="col-xs-12" style="height:10px;"></div>		
+					</form>
+				</div>
+				
+			</div>
+
+			<div class="collapse" id="collapseExample">
+				<div class="card card-body">
+				
+					<form class="form-inline" id="anyone" method="post" action="php/alt_anyone.php"> 						
+						<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Allow anyone to be an alternate host.</button>  
+						<div class="col-xs-12" style="height:10px;"></div>
+					</form>
+					
+					<form class="form-inline" id="enable" method="post" action="php/alt_enable.php"> 
+						<button class="btn btn-success btn-lg" type="submit" value="Submit" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Choose my alternate hosts.</button>
+						<div class="col-xs-12" style="height:10px;"></div>		
+					</form>
+					
+					<div class="collapse" id="collapseExample2">
+						<div class="card card-body">
+						<label>Enter Email:</label>
+							<form class="form-inline" id="choose" method="post" action="php/alt_choose.php"> 
+								<input name="alt" id="alt" type="text" class="form-control" placeholder="jon.doe@xyz.com">
+								<div class="col-xs-12" style="height:10px;"></div>
+								<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
+							</form>  
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		
+		</div>
+
 	</div>
-</div>
 
-</div>
-
-		<h2>General Settings</h2>	
+	<h2>General Settings</h2>	
 
 
 	<div class="row">
-	  <div class="col-sm-3">
+	
+		<div class="col-sm-3">
 		<h3>Office Call Me Number</h3>
-
-      <label>Enter number:</label>
-	  <form id="callMe" method="post" action="php/callMe.php"> 
-	  <input name="office" id="office" type="tel" class="form-control" placeholder="1235551234"/>
-	<div class="col-xs-12" style="height:10px;"></div>
-	<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button> 
-
-
-</form>	
-	  </div>
-	  <div class="col-sm-3">
+			<label>Enter number:</label>
+			<form id="callMe" method="post" action="php/callMe.php"> 
+				<input name="office" id="office" type="tel" class="form-control" placeholder="1235551234"/>
+				<div class="col-xs-12" style="height:10px;"></div>
+				<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button> 
+			</form>	
+		</div>
+		
+		<div class="col-sm-3">
 		<h3>Mobile Call Me Number</h3>  
-
-      <label>Enter number:</label>
-	  <form id="callMeCell" method="post" action="php/callMeCell.php"> 
-      <input name="cell" id="cell" type="tel" class="form-control" placeholder="1235551234"/>
-	<div class="col-xs-12" style="height:10px;"></div>
-	<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
-
-
-	  </form>
-	  </div>
-	  <div class="col-sm-3">
+			<label>Enter number:</label>
+			<form id="callMeCell" method="post" action="php/callMeCell.php"> 
+				<input name="cell" id="cell" type="tel" class="form-control" placeholder="1235551234"/>
+				<div class="col-xs-12" style="height:10px;"></div>
+				<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+			</form>
+		</div>
+		
+		<div class="col-sm-3">
 		<h3>Video System Address</h3>  
-
-      <label>Enter address:</label>
-	  <form id="videoSys" method="post" action="php/videoSys.php"> 
-      <input name="video" id="video" type="text" class="form-control" placeholder="jane.doe@video.xyz.com">
-	<div class="col-xs-12" style="height:10px;"></div>
-	<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
-
-	</form>
+			<label>Enter address:</label>
+			<form id="videoSys" method="post" action="php/videoSys.php"> 
+				<input name="video" id="video" type="text" class="form-control" placeholder="jane.doe@video.xyz.com">
+				<div class="col-xs-12" style="height:10px;"></div>
+				<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
+			</form>
 	  </div>
 	  
-	  <div class="col-sm-3">
+		<div class="col-sm-3">
 		<h3>Audio Pin</h3>  
-
-      <label>Enter pin:</label>
-	  <form id="audioPin" method="post" action="php/audioPin.php"> 
-      <input name="audio" id="audio" type="text" class="form-control" placeholder="9091">
-	<div class="col-xs-12" style="height:10px;"></div>
-	<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
-
-	</form>
+			<label>Enter pin:</label>
+			<form id="audioPin" method="post" action="php/audioPin.php"> 
+				<input name="audio" id="audio" type="text" class="form-control" placeholder="9091">
+				<div class="col-xs-12" style="height:10px;"></div>
+				<button type="submit" value="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>  
+			</form>
 	  </div>	  
 	  
 	</div>
 	
 	<div class="col-xs-12" style="height:30px;"></div>
-
+	
+</div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 		<script src="js/modal.js"></script>
 	</body>
