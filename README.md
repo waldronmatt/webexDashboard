@@ -26,10 +26,13 @@ Dashboard will give users one place to update common WebEx settings vs navigatin
 
 * The dashboard uses an insecure method for storing credentials (username and password stored as plaintext in php variables).
 * Special configuration required to implement user authentication such as SSO (see below for resources).
+* Data input validation does not occur on the client side; only through WebEx. If a user makes an invalid input, the input is not replicated on the server.
 * The Dashboard does not allow deletion of alternate host names nor adding more than 1 alternate host at a time.
 * The Video System Address setting cannot be tested via the apidemoeu site.
+* Each dashboard setting requires a separate ajax call increasing the amount of jQuery code.
 
 ## Additional Readings & Resources
+* Demo API portal login: https://apidemoeu.webex.com
 * XML API intro lab: https://learninglabs.cisco.com/lab/collab-webex/step/1
 * XML API landing page: https://developer.cisco.com/site/webex-developer/develop-test/xml-api/overview/
 * Reference guide: https://developer.cisco.com/docs/webex-xml-api-reference-guide/
