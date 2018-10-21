@@ -2,7 +2,7 @@
 
 WebEx dashboard built for updating meet settings quickly. 
 
-Website features pin, auto lock, alternate host, call me number, and video address settings on an easy-to-use dashboard.
+Website features host pin, auto lock, instant meeting, alternate host, office call me number, cell phone call me number, video address, and audio pin settings on an easy-to-use dashboard.
 
 ## Purpose
 
