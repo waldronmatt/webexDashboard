@@ -43,10 +43,9 @@ Dashboard will give users one place to update common WebEx settings vs navigatin
 
 ## Built With
 
-* Bootstrap4
+* Bootstrap3
 * PHP5
-* jQuery / JavaScript
-* AJAX
+* jQuery/JavaScript/AJAX
 * WebEx XML API
 
 ## Contributing
