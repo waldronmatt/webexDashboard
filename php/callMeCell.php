@@ -18,7 +18,7 @@
         $XML .="        </header>";
         $XML .="        <body>";
         $XML .="                <bodyContent xsi:type=\"java:com.webex.service.binding.user.SetUser\">"; 
-		$XML .="				<webExId>374510</webExId>";
+		$XML .="				<webExId>$username</webExId>";
 		$XML .="				<phones>";
 		$XML .="				<mobilePhone>$cell</mobilePhone>";
 		$XML .="				</phones>";
